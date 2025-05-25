@@ -338,7 +338,7 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
         },
       }
 
-      setBookingInfo(newBookingInfo)
+      setBookingInfo(newBookingInfo )
       console.log("Booking Info:", bookingInfo)
       if (res.data.status === "success") {
         paymentgateway(bookingInfo)

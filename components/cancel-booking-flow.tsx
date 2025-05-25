@@ -25,7 +25,7 @@ export default function CancelBookingFlow({ onComplete, onCancel, language }: Ca
   const [email, setEmail] = useState("")
   const [otp, setOtp] = useState("")
   const [date, setDate] = useState<Date | undefined>(undefined)
-  const [tickets, setTickets] = useState("")
+  // const [tickets, setTickets] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [otpSent, setOtpSent] = useState(false)
   const [emailError, setEmailError] = useState("")

@@ -910,7 +910,11 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                       {loading ? "Booking..." : "🎟️ Pay Now"}
                     </Button>
 
-                    
+                     <Button 
+                    onClick={prev => setStep((prev) => prev +1)}
+                    >
+                      {t.cancel}
+                    </Button>
 
                   </div>
                 </div>
@@ -935,7 +939,6 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                     >
                       {t.bookAnotherTicket}
                     </Button>
-                    
                   </div>
                 </div>
               )}

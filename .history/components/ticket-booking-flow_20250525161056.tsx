@@ -935,7 +935,11 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                     >
                       {t.bookAnotherTicket}
                     </Button>
-                    
+                     <Button 
+                    onClick={prev => setStep((prev) => prev +1)}
+                    >
+                      {t.cancel}
+                    </Button>
                   </div>
                 </div>
               )}

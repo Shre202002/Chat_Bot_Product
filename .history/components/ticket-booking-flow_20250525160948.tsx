@@ -728,7 +728,11 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                     </Button>
 
 
-                    
+                     <Button 
+                    onClick={prev => setStep((prev) => prev +1)}
+                    >
+                      {t.cancel}
+                    </Button>
                   </div>
                 </div>
               )}
@@ -767,8 +771,6 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                     <Button onClick={handleVerifyOTP} disabled={loading}>
                       {loading ? <Loader2 className="animate-spin h-4 w-4" /> : t.verify}
                     </Button>
-
-                    
 
                     
 
@@ -910,7 +912,10 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                       {loading ? "Booking..." : "🎟️ Pay Now"}
                     </Button>
 
-                    
+                    <Button
+                      onClick={() => console.log("Print Form data:", formData)}>
+                      Print Form data
+                    </Button>
 
                   </div>
                 </div>
@@ -935,7 +940,6 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                     >
                       {t.bookAnotherTicket}
                     </Button>
-                    
                   </div>
                 </div>
               )}

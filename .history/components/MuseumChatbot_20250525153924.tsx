@@ -306,7 +306,7 @@ export default function MuseumChatbot() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.3 }}
-                className="rounded-lg bg-white-800 px-3 py-2 text-sm text-white-600 font-bold shadow-md whitespace-nowrap border border-white-600">
+                className="rounded-lg bg-gray-800 px-3 py-2 text-sm text-white-600 font-bold shadow-md whitespace-nowrap border border-white-600">
                  Hello there, how can I assist you?
               </motion.div>
             </div>

@@ -1,8 +1,6 @@
-"use client"
-import React from 'react';
+// pages/widget.tsx
+import Head from 'next/head';
 import MuseumChatbot from '@/components/MuseumChatbot'; // Ensure correct path
-import './globals.css'; // or wherever your global CSS file is
-
 
 export default function Widget() {
     return (

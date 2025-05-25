@@ -765,7 +765,11 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                       {loading ? <Loader2 className="animate-spin h-4 w-4" /> : t.verify}
                     </Button>
 
-                    
+                    <Button
+                      onClick={prev => setStep((prev) => prev + 1)}
+                    >
+                      {t.cancel}
+                    </Button>
 
                   </div>
                 </div>

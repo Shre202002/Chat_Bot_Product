@@ -15,7 +15,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { format, addDays } from "date-fns"
 import { CalendarIcon, Loader2, X } from "lucide-react"
 import { getTranslation } from "@/lib/translations"
-import { pre } from "framer-motion/client"
 
 interface FormData {
   fullName: string
@@ -301,7 +300,7 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
       }
     }
 
-
+  
 
 
     try {
@@ -339,7 +338,7 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
         },
       }
 
-      setBookingInfo(newBookingInfo)
+      setBookingInfo(newBookingInfo )
       console.log("Booking Info:", bookingInfo)
       if (res.data.status === "success") {
         paymentgateway(bookingInfo)
@@ -726,6 +725,10 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                       {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                       {t.continue}
                     </Button>
+
+
+
+
                   </div>
                 </div>
               )}
@@ -764,8 +767,6 @@ export default function TicketBookingFlow({ onComplete, onCancel, language }: Ti
                     <Button onClick={handleVerifyOTP} disabled={loading}>
                       {loading ? <Loader2 className="animate-spin h-4 w-4" /> : t.verify}
                     </Button>
-
-                    
 
                   </div>
                 </div>
